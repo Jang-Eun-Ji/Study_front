@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 180, 151);
+            color: white;
+        }
+        p {
+            background-color: peachpuff;
+            /* text 디자인 */
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+        .italic {font-style: italic;}
+        .bigtext {font-size: 24px;}
+        .relativetext {font-size: 120%;}
+        .em_parent {
+            font-size: 20px;
+        }
+        .em_child {
+            font-size: 1.5em;
+        }
+        
+        .percent_parent {
+            font-size: 20px;
+        }
+        .percent_child{
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <div><img style="width: 50%; margin: auto 25%;" src="https://d.newsweek.com/en/full/1969214/kitten-looking-angry.jpg" alt="_blank"></div>
+    <h2 style="text-align: center;">CSS 기본 문법</h2>
+    <p>우선 적용</p>
+
+    <p class="italic bigtext">font style과 font sizze 중첩적용1</p>
+    <p class="italic relativetext">font style과 font sizze 중첩적용2</p>
+
+    <!-- em:배수(1.2) percent(120%)비교 -->
+    <div class="em_parent">
+        나는 em부모
+        <div class="em_child">
+            이 텍스트는 부모 글꼴의 1.5배의 글꼴입니다.
+        </div>
+    </div>
+    <div class="percent_parent">
+        나는%부모
+        <div class="percent_child">
+            이텍스트는 부모 글꼴의 150%크기의 글꼴입니다.
+        </div>
+    </div>
+
+    <div style="border: 3px solid white; padding: 5px; margin: 15px;">
+        margin, bodder, padding을 가진 요소
+    </div>
+
+    <div style="padding-left: 150px;">
+        padding만 가진 text 요소
+    </div>
+
+    <div>
+        <table style="margin: auto;">
+            <thead>
+                <td>고양이</td>
+                <td>장은지</td>
+            </thead>
+            <tbody>
+                <td>화난</td>
+                <td>졸린</td>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
