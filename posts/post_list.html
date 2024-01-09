@@ -33,9 +33,9 @@
         async function callBackImp(){
             try{
                 let myTarget = document.getElementsByClassName("table")[0];
-                const response1 = await axios.get('https://jsonplaceholder.typicode.com/posts/');
+                const response1 = await axios.get('http://13.209.40.114:8080/csr/json');
                 response1.data.forEach(element => {
-                    myTarget.innerHTML += `<tr><td>${element.id}</td><td>${element.title}</td><td>${element.body}</td><td>${element.userId}</td></tr>`
+                    myTarget.innerHTML += `<tr><td>${element.id}</td><td>${element.title}</td><td>${element.body}</td><td>${element.authorName}</td></tr>`
                 });
             }catch(e){
                 console.log(e);
